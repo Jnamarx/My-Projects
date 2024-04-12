@@ -1,175 +1,154 @@
+/* //primary turquoise ==> #35C2CF */
+/* //primary orange ==> #F89259 */
+/* //primary font color ==> #5F5D74 */
+/* //gray ==> #F0F0F9 */
+
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 a {
   text-decoration: none;
   font-weight: 500;
 }
+
 body {
-  background: #eef6f7;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
-}
-.image2 {
-  width: 1400px;
-  height: 800px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 7px;
-}
-
-.image-menu-container {
-  position: relative; /* This makes it a reference for absolutely positioned children */
-  width: 100%; /* Adjust as needed */
-}
-
-.image-menu-container img {
-  width: 100%; /* Make the image expand to fill the container */
-  height: 100%; /* Maintain aspect ratio */
-  display: flex; /* Remove bottom space under the image */
-}
-
-.menu-bar {
-  position: absolute; /* Position the menu over the image */
-  top: 0%;
-  left: 0; /* Align it to the left of the container */
-  width: 100%; /* Menu spans the full width of the container */
-  background-color: white; /* Semi-transparent background */
-  color: white; /* Text color */
-  padding: 30px 0; /* Padding around menu items */
-  text-align: right; /* Center the menu items */
-}
-
-.menu-bar ul {
-  list-style-type: none; /* Remove default list styling */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
-.menu-bar li {
-  display: inline; /* Display menu items in a row*/
-  margin-right: 23px; /* Spacing between menu items */
-}
-
-.menu-bar a {
-  color: black; /* Text color for links */
-  font-size: 16px; /* Adjust font size as needed */
-}
-.overlay-text {
-  position: absolute;
-  top: 21%; /* Center vertically */
-  left: 31.5%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust to truly center */
-  color: white; /* Text color */
-  font-size: 45px; /* Adjust text size as necessary */
-  font-weight: 500; /* Make text bold */
-  text-align: left; /* Ensure multi-line text is centered */
-}
-.overlay-text2 {
-  position: absolute;
-  top: 25%; /* Center vertically */
-  left: 27.5%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust to truly center */
-  color: white; /* Text color */
-  font-size: 45px; /* Adjust text size as necessary */
-  font-weight: 500; /* Make text bold */
-  text-align: left; /* Ensure multi-line text is centered */
-}
-
-.image-container {
-  position: relative;
-  display: inline-block; /* Adjust as necessary */
-}
-
-.image-container img {
-  display: block; /* Removes bottom space/gap under the image */
-  width: 100%; /* Adjust as necessary */
-  height: auto; /* Adjust as necessary */
-}
-
-.image-container {
-  position: relative;
-  display: inline-block; /* Adjust as necessary */
-  padding: 20px; /* Adds padding around the image, creating space */
-  background: #f0f0f0; /* Light background to highlight the padding */
-}
-
-.image-container img {
-  display: block; /* Removes bottom space/gap under the image */
-  width: calc(100% - 40px); /* Adjusts the width taking padding into account */
-  height: auto; /* Adjust as necessary */
-}
-
-.menubar3 {
-  position: absolute;
-  bottom: 22%; /* Adjust this value for vertical positioning from the bottom */
-  left: 30px; /* Creates space on the left */
-  right: 30px; /* Creates space on the right, works with 'left' to center the bar */
-  background: white; /* White background bar */
-  padding: 24px 0; /* Adjust padding as necessary */
-  box-sizing: border-box;
-  display: flex; /* Organize list items in a row */
-  justify-content: space-around; /* Evenly space the list items */
-  list-style-type: none; /* Remove bullet points from list */
-  border-radius: 10px; /* Optional: Adds rounded corners to the bar */
-}
-
-.menubar3 li {
-  text-align: left; /* Center text within each list item */
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.menubar3 h2 {
-  font-weight: 600;
-}
-
-.menubar3 h4 {
-  margin: 10px 0; /* Adjust margin for spacing */
-}
-
-.menubar3 h4 em {
-  font-style: italic; /* Italicize the text inside <em> */
-  background-color: rgb(223, 215, 215);
-  padding: 4px;
-  border-radius: 10px;
-}
-.sign-up-btn {
-  background-color: rgb(39, 195, 235);
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.search-bar {
-  position: absolute;
-  top: 33%;
-  left: 43%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-image: url("./image2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.search-bar input[type="text"] {
-  width: 350px;
-  height: 45px;
-  padding: 8px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 4rem;
+  padding: 0.75rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+  column-gap: 2rem;
 }
 
-.search-bar button {
-  padding: 22px 32px;
-  background-color: #d68753;
+header a {
+  color: #5f5d74;
+  font-size: 1rem;
+}
+
+header .signup-btn {
+  padding: 1rem 0.85rem;
+  font-size: 1.1rem;
   color: #fff;
+  font-weight: 600;
+  background-color: #35c2cf;
+  border-radius: 0.3rem;
+}
+
+main {
+  width: 100%;
+  /* height: max-content; */
+  height: 100%;
+  /* max-height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.filtering-wrapper {
+  width: 65%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 2rem;
+}
+.filtering-wrapper h2 {
+  color: #fff;
+  text-shadow: 2px 1px #000;
+  font-size: 3rem;
+  width: 35rem;
+}
+
+.filtering-section {
+  background-color: #fff;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.filtering-section input {
   border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
   outline: none;
+  height: 100%;
+}
+
+.filtering-section .search-wrapper {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.filtering-section .date-wrapper {
+  width: 40%;
+  padding: 0 1rem;
+}
+.filtering-section .search-btn {
+  border: none;
+  outline: none;
+  width: 10%;
+  height: 100%;
+  background-color: #f89259;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+
+.ads {
+  width: 90%;
+  height: max-content;
+  padding: 0.85rem 0.65rem;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ads span {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 0.5rem;
+}
+
+.ads span h3 {
+  width: 13.6rem;
+}
+.ads span .pill {
+  width: max-content;
+  height: max-content;
+  padding: 0.35rem 1rem;
+  color: #5f5d74;
+  background-color: #f0f0f9;
+  border-radius: 99px;
 }

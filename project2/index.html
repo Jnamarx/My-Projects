@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
 
-    <title>NEW PROJECT</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <div class="image-menu-container">
-      <img src="image2.jpg" alt="Descriptive Alt Text" />
-      <div class="search-bar">
-        <input
-          type="text"
-          placeholder="    Ex. Amsterdam, New York, Paris..."
-        />
-        <input type="text" placeholder="Dates" class="text2" />
-        <button type="submit">Search</button>
+  <title>NEW PROJECT</title>
+</head>
+
+<body>
+  <header>
+    <a href="#home">Home</a>
+    <a href="#contribute">Contribute</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#blog">Blog</a>
+    <a href="#sign-up" class="signup-btn">Sign up</a>
+  </header>
+  <main>
+    <section class="filtering-wrapper">
+      <h2>Find amazing things to do. Anytime, anywhere.</h2>
+      <div class="filtering-section">
+        <span class="search-wrapper">
+          <i class="fa-location"></i>
+          <input type="search" class="search-field" id="search-locations"
+            placeholder="Ex. Amsterdam, New Yourk, Paris..." />
+        </span>
+        <span class="date-wrapper">
+          <i class="fa-calendar"></i>
+          <input type="date" class="search-field" id="filter-date" />
+          <small>Dates</small>
+        </span>
+        <button class="search-btn" id="search-btn">Search</button>
       </div>
-      <div class="overlay-text">Find amazing things to do.</div>
-      <div class="overlay-text2">Anytime, anywhere.</div>
-      <nav class="menubar3">
-        <li>
-          <h2>Grand Canyon All-</h2>
-          <h2>American Helicopter Tour</h2>
-          <h4>from $396</h4>
-          <h4><em>Free Cancellation</em></h4>
-        </li>
-        <li>
-          <h2>Skip The Line: NYC One</h2>
-          <h2>World Obsevatory Ticket</h2>
-          <h4>from $40</h4>
-          <h4><em>3 hours</em></h4>
-        </li>
-        <li>
-          <h2>Harry Potter Tour Of Warner</h2>
-          <h2>Bros.Studio in London</h2>
-          <h4>from $199</h4>
-          <h4><em>Free Cancellation</em></h4>
-        </li>
-      </nav>
-      <nav class="menu-bar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Contribute</a></li>
-          <li><a href="#about">Destinations</a></li>
-          <li><a href="#contact">blog</a></li>
-          <li>
-            <a class="sign-up-btn" href="#sign up">Sign Up</a>
-          </li>
-        </ul>
-      </nav>
+    </section>
+    <div class="ads" id="ads">
+      <span>
+        <h3>
+          Gran Canyon All- American Helicopter Tour
+        </h3>
+        <small>from $396</small>
+        <small class="pill">
+          <i class="fa-checkmark"></i>
+          <small>Free cancellation</small>
+        </small>
+      </span>
+      <span>
+        <h3>
+          Skip the Line: NYC One World Observatory Ticket
+        </h3>
+        <small>from $40</small>
+        <small class="pill">
+          <i class="fa-checkmark"></i>
+          <small>3 hours</small>
+        </small>
+      </span>
+      <span>
+        <h3>
+          Harry Potter Tour of Warner Bros. Studio in London
+        </h3>
+        <small>from $199</small>
+        <small class="pill">
+          <i class="fa-checkmark"></i>
+          <small>Free cancellation</small>
+        </small>
+      </span>
     </div>
-  </body>
+  </main>
+
+</body>
+
 </html>
